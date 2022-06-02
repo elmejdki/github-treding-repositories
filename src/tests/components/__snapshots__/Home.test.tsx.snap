@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Home correctly 1`] = `
+<React.Fragment>
+  <styled.header>
+    Trending GITHUB repositories in the last 7 days
+  </styled.header>
+  <styled.main>
+    <RepositoryListFilters />
+    <RepositoryList />
+  </styled.main>
+  <styled.footer>
+    © Copyright Zakariae El Mejdki 2022.
+  </styled.footer>
+</React.Fragment>
+`;
