@@ -1,10 +1,11 @@
 import styled, { css } from 'styled-components';
+import { BLACK_SECOND, GREY } from '../../constants/colors';
 
 const SIZING = css`
-  max-width: 1400px;
+  max-width: 1100px;
   margin: 0 30px;
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1100px) {
     margin: 0 auto;
   }
 `;
@@ -14,7 +15,7 @@ export const Header = styled.header`
   font-weight: bold;
   text-align: center;
   padding: 50px 5px;
-  color: #424242;
+  color: ${BLACK_SECOND};
 
   ${SIZING}
 `;
@@ -27,7 +28,7 @@ export const Footer = styled.footer`
   font-weight: bold;
   text-align: center;
   padding: 20px;
-  color: #a1a1a1;
+  color: ${GREY};
 
   ${SIZING}
 `;
