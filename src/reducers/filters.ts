@@ -1,22 +1,30 @@
-const filtersReducerDefaultState = {
+import { IFiltersAction, SET_LANGUAGE, SET_SHOW_FAVORITES } from "../actions/filters";
+
+export interface IFiltersState {
+  showFavorites: boolean;
+  language: string;
+}
+
+const filtersReducerDefaultState: IFiltersState = {
   showFavorites: false,
+  language: '',
 }
 
-interface IAction {
-  type: string;
-  showFavorites: string;
-}
-
-const filtersReducer = (state = filtersReducerDefaultState, action: IAction) => {
+const filtersReducer = (state = filtersReducerDefaultState, action: IFiltersAction) => {
   switch(action.type) {
-    case 'SHOW_FAVORITE_REPOSITORIES':
+    case SET_SHOW_FAVORITES:
       return {
         ...state,
-        showFavorites: action.showFavorites,
+        showFavorites: action.payload,
+      };
+    case SET_LANGUAGE:
+      return {
+        ...state,
+        language: action.payload,
       };
     default:
       return state;
-  };
+  }
 }
 
 export default filtersReducer;

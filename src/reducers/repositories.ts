@@ -1,27 +1,26 @@
-interface IRepository {
-  id: string;
-  name: string;
-};
+import { IRepositoriesAction, SET_TRENDING_REPOSITORIES } from "../actions/repositories";
 
-interface IAction {
-  id: string;
-  updates: IRepository;
-  repositories: IRepository[];
-  type: string;
-};
+export interface IRepository {
+  id: number;
+  title: string;
+  link: string;
+  description: string;
+  stars: number;
+}
 
-const respositoriesReducerDefaultState: IRepository[] = [];
+export type IRepositoriesState = IRepository[];
+const respositoriesReducerDefaultState: IRepositoriesState = [];
 
 const respositoriesReducer = (
   state = respositoriesReducerDefaultState,
-  action: IAction,
+  action: IRepositoriesAction,
 ) => {
   switch(action.type) {
-    case 'SET_REPOSITORIES':
-      return action.repositories;
+    case SET_TRENDING_REPOSITORIES:
+      return action.payload;
     default:
       return state;
-  };
+  }
 };
 
 export default respositoriesReducer;
