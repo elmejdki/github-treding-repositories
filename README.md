@@ -1,6 +1,46 @@
-# Getting Started with Create React App
+# GitHub Trending Repositories
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Project main idea is to fetch the most started github repositories on the last 7 days, I did work on this project based on some requirement by a company called Veed.io for a technical front end interview
+
+# Preview
+
+![project images](./screenshot.png)
+
+## Built With
+ReactJS 18,
+ReactDOM 18,
+TypeScript,
+Redux,
+create-react-app,
+styled-components,
+redux-saga
+
+## Live Demo
+[Live Demo Link](https://github-trending-repositories.vercel.app/)
+
+## Getting Started
+
+### Prerequisites
+
+In order to have this project up and running you will need:
+
+- NodeJS 10+
+
+### Setup
+
+First, you need to clone this project using one of the links above, using this command:
+
+```Javascript
+git clone RESPOSITRY_LINK
+```
+
+Then you should run: `npm install`
+
+And afterward, you supposed to run: `npm start`, to run the project in your local machine.
+
+Then head to the localhost on port 3000 `https://localhost:3000`
+
+Congrats the project is fully working.
 
 ## Available Scripts
 
