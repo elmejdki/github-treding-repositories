@@ -1,6 +1,6 @@
 # GitHub Trending Repositories
 
-This Project main idea is to fetch the most started github repositories on the last 7 days, I did work on this project based on some requirement by a company called Veed.io for a technical front end interview
+This Project main idea is to fetch the most started github repositories on the last 7 days, I did work on this project based on some requirement by a company for a technical front end interview
 
 # Preview
 
